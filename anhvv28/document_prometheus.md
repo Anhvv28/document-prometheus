@@ -6,7 +6,7 @@
 - Chủ yếu tập trung vào các metrics , sử dung **PromQL**(Prometheus Query language) để select dữ lieu metric.
 - Support cảnh báo **(Alerting)** , tích hợp với cảnh báo **Alertmanager** .
 
-<img src="https://imgur.com/a/9sXbhOC](https://prometheus.io/assets/architecture.png">
+<img src="[https://imgur.com/a/9sXbhOC](https://prometheus.io/assets/architecture.png](https://imgur.com/FXmN5qB)">
 
 ## 2. Metrics
 
