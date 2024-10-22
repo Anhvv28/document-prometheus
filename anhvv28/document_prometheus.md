@@ -31,3 +31,14 @@ http_requests_total{method="GET", status_code="200"}
  - method="GET" — phương thức HTTP là GET.
  - status_code="200" — mã trạng thái trả về là 200 (OK).
 ```
+- Đếm số lượng yêu cầu HTTP đến server theo từng phương thức HTTP (GET, POST) và mã trạng thái trả về (200, 404, 500, v.v.).
+```sh
+Metric Name: http_requests_total — Tổng số lượng yêu cầu HTTP.
+Metric Labels:
+method — nhãn mô tả phương thức HTTP (GET, POST, v.v.).
+status_code — nhãn mô tả mã trạng thái HTTP (200, 404, 500, v.v.).
+Kết quả:
+http_requests_total{method="GET", status_code="200"} 2500
+http_requests_total{method="POST", status_code="404"} 15
+http_requests_total{method="GET", status_code="500"} 5
+```
