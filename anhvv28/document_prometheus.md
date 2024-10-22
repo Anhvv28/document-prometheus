@@ -6,8 +6,6 @@
 - Chủ yếu tập trung vào các metrics , sử dung **PromQL**(Prometheus Query language) để select dữ lieu metric.
 - Support cảnh báo **(Alerting)** , tích hợp với cảnh báo **Alertmanager** .
 
-<img src="[[https://imgur.com/a/prometheus-Z2p71iW](https://imgur.com/gallery/abc-eUskNYW)](https://imgur.com/a/Xa9e9pY)">
-
 ## 2. Metrics
 
 - **Metric name** là tên duy nhất xác định một loại số liệu cụ thể mà Prometheus thu thập. Tên của metric thường phản ánh loại thông tin mà metric đó đo lường, ví dụ như số lượng yêu cầu HTTP, mức sử dụng CPU, dung lượng bộ nhớ, v.v.
