@@ -42,3 +42,18 @@ http_requests_total{method="GET", status_code="200"} 2500
 http_requests_total{method="POST", status_code="404"} 15
 http_requests_total{method="GET", status_code="500"} 5
 ```
+## 3. Funciton
+- Prometheus hỗ trợ nhiều function trong PromQL để xử lý và phân tích dữ liệu metrics. Một số function phổ biến bao gồm:
+```sh
+rate(): Tính toán tốc độ thay đổi của các counter theo thời gian.
+  Ví dụ: rate(http_requests_total[5m]) tính tốc độ thay đổi request HTTP trong 5 phút qua.
+
+increase(): Tính sự gia tăng của một counter qua một khoảng thời gian.
+  Ví dụ: increase(http_requests_total[1h]) tính tổng số lượng request HTTP trong 1 giờ qua.
+
+avg_over_time(): Tính giá trị trung bình của metric qua một khoảng thời gian.
+  Ví dụ: avg_over_time(node_cpu_seconds_total[5m]) tính trung bình thời gian CPU trong 5 phút qua.
+
+histogram_quantile(): Tính phần trăm phân vị của histogram.
+  Ví dụ: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) tính phần trăm phân vị 95th của thời gian phản hồi HTTP request.
+```
