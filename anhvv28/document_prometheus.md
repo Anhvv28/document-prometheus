@@ -57,3 +57,4 @@ avg_over_time(): Tính giá trị trung bình của metric qua một khoảng th
 histogram_quantile(): Tính phần trăm phân vị của histogram.
   Ví dụ: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) tính phần trăm phân vị 95th của thời gian phản hồi HTTP request.
 ```
+## 4. Alerting Rule
